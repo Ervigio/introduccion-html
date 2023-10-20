@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
     <title>Ejercicio 5: Formularios</title>
   </head>
   <body>
     <h1>Ejercicio 5: Formularios</h1>
     <!-- Crea un formulario con el método "post" -->
+    <form action="#" method="post">
+        <br><b><u><label for="Formulario" >FORMULARIO DE REGISTRO</label></u></b><br>
 
     <!-- Añade un campo de texto para el nombre con el atributo "name" establecido como "nombre" -->
-
+        <br><label for="nombre">Nombre: </label><input type="text" name="nombre">
     <!-- Añade un campo de texto para el correo electrónico con el atributo "name" establecido como "email" -->
-
+        <label for="email">correo-e: </label><input type="email" name="email"><br>
     <!-- Añade un campo de selección para la edad con el atributo "name" establecido como "edad" -->
-    
+        <br><label for="Rango-edad">Rango de edad: </label>
+        <select name="Rango-edad">
+            <option value=""></option>
+            <option value="18-29">18 a 29</option>
+            <option value="30-64">30 a 64</option>
+            <option value="65+">65 y más!</option>
+        </select>
     <!-- Añade un campo de selección para el sexo con el atributo "name" establecido como "sexo" -->
+    <label for="Género">Género: </label>
+    <input type="radio" name="Género" value="Hombre"> Hombre
+    <input type="radio" name="Género" value="Mujer"> Mujer
+    <input type="radio" name="Género" value="Otro"> Otro
+    <br><br>
 
     <!-- Añade un campo de contraseña para la contraseña con el atributo "name" establecido como "contraseña" -->
+    <br><label for="contraseña">Contraseña: </label><br>
+    <input type="password" name="contraseña"><br>
 
     <!-- Añade un campo de confirmación de contraseña para la confirmación de contraseña con el atributo "name" establecido como "confirmación de contraseña" -->
+    <br><label for="contraseña">Confirmación de contraseña: </label><br>
+    <input type="password" name="confirma-contraseña" id=""><br>
 
-    <!-- Añade un botón de envío con el valor "Enviar" -->
+    <!-- Añade un botón de envío con el valor "Enviar" -->    
+    <br><br><button type="submit">Enviar>>></button>
+    
+    </form>
   </body>
 </html>
